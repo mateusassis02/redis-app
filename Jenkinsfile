@@ -24,7 +24,7 @@ pipeline {
         }
          stage('shutdown dos containers de teste'){
             steps{
-                sh 'docker-compose down --build -d'
+                sh 'docker-compose down'
             }
         }
 

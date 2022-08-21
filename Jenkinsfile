@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Sonarqube validation'){
             steps{
-                script {
+                script{
                     scannerHome = tool 'sonar-scanner';
                 }
                 withSonarQubeEnv('sonar-server'){
